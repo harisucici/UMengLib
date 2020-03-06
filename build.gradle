@@ -4,10 +4,10 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
-        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.1.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
     }
@@ -16,7 +16,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 
